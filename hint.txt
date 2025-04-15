@@ -1,0 +1,21 @@
+
+Problem:
+    Your task is to create a Python function called get_prime_factors(n) 
+    that will return all unique prime factors of an integer n in a list. 
+    A prime factor of n is a prime number that divides n without leaving a remainder. 
+    The expected complexity is O(sqrt(n))
+    Note that returned prime factors should be unique and sorted in ascending order in the resulting list
+
+
+Hint:
+    Prime Check Logic: Your is_prime function is not checking all possible divisors up to the square root of the number. Consider revising it to check divisibility for all numbers up to the square root of num.
+
+    Factorization Loop:
+
+    You're currently checking if num is divisible by i and num/i. Instead, focus on dividing num by i as long as it's divisible, and then move to the next potential factor.
+    Remember to handle the case where num itself is a prime number greater than the square root.
+    Unique Factors: Ensure that you only add unique prime factors to your list.
+
+    Here's a hint: Start with the smallest prime, 2, and divide n by it as long as possible. Then move to the next odd number and repeat. If n is still greater than 1 after the loop, it must be a prime number itself.
+
+    Try implementing these ideas and see how it goes! 🚀
