@@ -1,0 +1,36 @@
+
+Problem:
+    You are provided with two integers, a and b. Your task is to 
+    write a Python function that checks whether both a and b are 
+    co-prime or not. Two numbers are said to be co-prime or mutually 
+    prime if the only positive integer that divides both of them is 1. 
+    The expected complexity is O(sqrt (max(a,b))).
+    
+    For example:
+    In the first example, the only positive integer that divides both 15 
+    and 28 is 1; hence, they are co-prime. However, in the second example, 
+    12 and 18 are divisible by 2 and 3; thus, they are not co-prime.
+
+Tests:
+    (15, 28) True
+    (12, 18) False
+    (1, 1) True
+    (35, 49) False
+    (8, 25) True
+    (10000, 9999) True
+    (6389, 3762) True
+    (4638, 4799) True
+    (5785, 9186) True
+    (2167, 2183) True
+    (14, 49) False
+    (30, 45) False
+    (22, 77) False
+    (42, 56) False
+    (60, 90) False
+    (17, 51) False
+
+Hint:
+    To determine if two numbers are co-prime, 
+    you can use the concept of the greatest common 
+    divisor (GCD). If the GCD of two numbers is 1, 
+    they are co-prime.
